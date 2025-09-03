@@ -1,0 +1,15 @@
+npm init -y
+npm install -D typescript ts-node @types/node
+    se não tiver o ts instalado
+    npm install -g typescript
+    npm install -g ts-node
+
+criar arquivo tsconfig.json
+
+npm i @aws-sdk/client-bedrock @aws-sdk/client-bedrock-runtime
+
+Create sample bedrock api call file
+ new folder src/intro/starter.ts
+
+para testar o metodo
+> ts-node src/intro/starter.ts
