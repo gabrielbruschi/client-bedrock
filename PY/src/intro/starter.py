@@ -1,9 +1,10 @@
 import boto3
 import pprint
+from config import BEDROCK_REGION_NAME, BEDROCK_MODEL_ID
 
 bedrock = boto3.client(
     service_name='bedrock',
-    region_name='us-east-2')
+    region_name=BEDROCK_REGION_NAME)
 
 pp = pprint.PrettyPrinter(depth=4)
 
@@ -18,4 +19,4 @@ def get_foundation_model(modelIdentifier):
     pp.pprint(model)
 
 #list_foundation_models()
-get_foundation_model('amazon.nova-micro-v1:0')
+get_foundation_model(BEDROCK_MODEL_ID)
